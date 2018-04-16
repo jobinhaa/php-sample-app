@@ -1,7 +1,7 @@
 <?php
 /* Credenciais de comunicação com o banco. */
 define('DB_SERVER', 'backend'); 
-define('DB_USERNAME', ''); 
+define('DB_USERNAME', 'root'); 
 define('DB_PASSWORD', ''); 
 define('DB_NAME', 'demo');
  

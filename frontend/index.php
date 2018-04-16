@@ -59,7 +59,7 @@
                     // Remova a linha de comentário abaixo para testar a comunicação com o Banco:
 
                     $sql = "SELECT * FROM students";
-                    if($result = mysqli_query($link, $sql)){
+                    if($result = mysqli_query($connection, $sql)){
                         if(mysqli_num_rows($result) > 0){
                             echo "<table class='table table-bordered table-striped'>";
                                 echo "<thead>";
@@ -93,11 +93,11 @@
                             echo "<p class='lead'><em>No records were found.</em></p>";
                         }
                     } else{
-                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($connection);
                     }
  
                     // Fechando a conexão com o banco:
-                    mysqli_close($link);
+                    mysqli_close($connection);
 
                     // Remova a linha de comentário abaixo para testar a comunicação com o Banco:
                     ?>
