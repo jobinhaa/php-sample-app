@@ -1,0 +1,41 @@
+# Documentaçāo Frontend
+
+## Primeiros passos
+
+No arquivo Dockerfile você precisará definir a versāo do seu Apache, para isso utilize o *FROM*
+
+ **Exemplo: FROM php:7.2-apache**
+
+Nesse projeto utilizamos a versāo 7.2 mas você pode consultar as versões mais atuais em https://hub.docker.com/_/php/
+
+Definimos o diretório onde todos os arquivos ficarāo utilizando o *WORKDIR*
+
+ **Exemplo: WORKDIR src/ /var/www/html/**
+
+Ainda no arquivo Dockerfile você precisará copiar todo o conteúdo do diretório, para isso utilizamos o *COPY*
+
+**Exemplo:  COPY . /var/www/html/**
+
+---
+
+## Criaçāo de containers
+
+- Para gerar a imagem do container, utilize no terminal o comando *docker build*.
+Nesse comando você deverá passar o nome da imagem, a versāo e o diretório onde está localizado o Dockerfile.
+
+  **Exemplo: docker build . -t front-php:0.0.1** 
+
+- Para rodar o container utilizamos o comando *docker run* passando o nome e versão da imagem, a porta do host. 
+
+  **Exemplo: docker run -d -p 80:80 front-php:0.0.1** 
+  
+- No comando acima utilizamos outras tags como *-d* que serve para rodar o container em background.
+
+- Você pode confirmar que a imagem foi baixada executando o comando *docker images*
+
+## Deletando containers
+
+- Para deletar a imagem você precisa utilizar o comando *docker kill* onde você passará o nome da imagem que quer apagar.
+
+  **Exemplo: docker kill front-php** 
+
