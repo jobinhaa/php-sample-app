@@ -27,7 +27,7 @@ Ainda no arquivo Dockerfile você precisará copiar todo o conteúdo do diretór
 
 ## Criaçāo de containers
 
-- Para gerar a imagem do container, utilize no terminal o comando *docker build*.
+- Para gerar a imagem do container, no terminal de sua preferência utilize o comando *docker build*.
 Nesse comando você deverá passar o nome da imagem, a versāo e o diretório onde está localizado o Dockerfile.
 
   **Exemplo: docker build . -t front-php:0.0.1** 
