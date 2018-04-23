@@ -55,6 +55,6 @@ Para fazer o frontend se comunicar com o backend utilizamos o comando
     
 Para deletar o container basta utilizar o comando 
 
-        docker kill *nome_da_imagem*
+        docker kill nome_da_imagem
 
 
