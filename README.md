@@ -8,8 +8,8 @@
 
 ### Primeiros passos
  As instruções de como configurar os builds para subir a aplicação para o *Docker* está localizada nas seguintes pastas:
- - Frontend
- - Backend
+ - [Frontend](https://github.com/jobinhaa/php-sample-app/blob/master/frontend/readme.md)
+ - [Backend](https://github.com/jobinhaa/php-sample-app/blob/master/backend/readme.md)
 
  A ordem de configuração é: primeiro a pasta frontend depois a pasta do backend, uma vez que a segunda pasta depende de configurações prévias que estão na pasta do front.
 
