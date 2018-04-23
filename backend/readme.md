@@ -8,7 +8,7 @@ Para baixar a imagem do php utilizamos o comando
 
 Em seguida utilizamos o comando abaixo para baixar mysql
 
-    docker pull mysql:latest
+    docker pull mysql:5.7
 
 No arquivo *Dockerfile* definimos a versão do mysql e indicamos onde ele está localizado usando os seguintes comandos
 
