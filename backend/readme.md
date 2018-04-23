@@ -43,4 +43,14 @@ O comando acima ignora sql e utiliza entry point
 - Para ver o que tem dentro do banco de dados executamos o comando
 
     **docker exec -ti backend mysql -u root -p**
+    
+    
+Para fazer o frontend se comunicar com o backend utilizamos o comando
+
+    **docker build . -t frontend:0.0.1**
+    
+ E em seguida
+
+    **docker run -d -p 80:80 --name frontend --link backend frontend:0.0.1**
+
 
