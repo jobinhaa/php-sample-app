@@ -9,10 +9,13 @@
   Nesse projeto utilizamos a versāo 7.2 mas você pode consultar as versões mais atuais em https://hub.docker.com/_/php/
 
 - É necessário instalar o módulo do PHP - MYSQLI que é responsável pela conexão com banco de dados, para isso utilizamos o 
+
   **RUN docker-php-ext-install mysqli**
 
   Para habilitar esse módulo utilizaremos o comando 
+ 
   **RUN docker-php-ext-enable mysqli**
+  
   esse comando é opcional uma vez que é implicito.
  
 - Definimos o diretório onde todos os arquivos ficarāo utilizando o *WORKDIR*
