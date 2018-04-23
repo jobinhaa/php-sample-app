@@ -3,10 +3,15 @@
 ***nac:*** Criação de uma aplicação no formato "CRUD" executada em containers com base na linguagem "PHP" e no banco de dados "MySQL";
 
 **Joana Durvalo**
-
 **RM77739**
-
 ***2TINA***
+
+### Primeiros passos
+ As instruções de como configurar os builds para subir a aplicação para o *Docker* está localizada nas seguintes pastas:
+ - Frontend
+ - Backend
+
+ A ordem de configuração é: primeiro a pasta frontend depois a pasta do backend, uma vez que a segunda pasta depende de configurações prévias que estão na pasta do front.
 
 ---
 
